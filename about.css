@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/*SIDE NAV SECTION*/
+.header_wrapper {
+    width: 100%;
+    height: 100px;
+
+    background-color: #c0c0c0;
+}
+
+.main_marvel_logo{
+    display: none;
+
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    
+    height: 50px;
+    width: 100px;
+}
+
+.main_marvel_logo img{
+    height: 100%;
+    width: 100%; 
+}
+
+.navbar-menu-toggle {
+    display: none;
+
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    color: #ffffff;
+}
+
+.navbar-menu-toggle:hover {
+    cursor: pointer;
+    color: #c20f0f;
+}
+
+.side-navbar {
+    display: none;
+
+    position: fixed;
+    top: 0px;
+    right: -72%;
+
+    padding: 20px;
+
+    width: 50%;
+    height: calc(var(--vh, 1vh) * 100);
+
+    transition: 1s;
+
+    
+    background-color: #888888e5;
+    color: white;
+
+    z-index: 100;
+}
+
+.side-navbar .xicon{
+    display: inline;
+
+    position: relative;
+    left: 82%;
+
+    font-size: 20px;
+}
+
+.xicon:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.side-navbar-links{
+    margin-top: 30px;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-link a {
+    text-decoration: none;
+    font-size: 18px;
+
+    color: white;
+}
+
+.side-navbar-links a:hover {
+    cursor: pointer;
+    color: #000000;
+}
+
+.side-navbar-link .active {
+    border-radius: 5px;
+
+    padding: 5px;
+    
+    background-color: #c20f0fcb;
+}
+
+.side-nav-follow-icons-container{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+    margin-top: 280px;
+}
+
+.side-nav-follow-icons-container h2{
+    font-size: 16px;
+    font-weight: 400px;
+
+    margin-top: 5px;
+
+    color: #ffffff;
+}
+
+.side-nav-follow-icons{
+    cursor: pointer;
+
+    font-size: 20px;
+    text-align: center;
+
+    padding-top: 10px;
+}
+
+.side-nav-follow-icons i{
+    padding-right: 15px; 
+
+    color: #c20f0fcb;
+}
+
+/*HEADER SECTION*/
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 16%;
+
+    width: 1240px;
+    max-width: 90%;
+    height: 70px;
+
+    margin: auto;
+    padding-top: 15px;
+}
+
+.nav_main_logo{
+    height: 70px;
+    width: 130px;
+}
+
+.nav_main_logo img{
+    height: 100%;
+    width: 100%;
+}
+
+header nav a {
+    margin-right: 20px;
+    padding: 5px 10px;
+
+    transition: 0.2s;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #eee;
+}
+
+header nav a.active,
+header nav a:hover {
+    border-radius: 5px;
+
+    background-color: #c20f0fcb;
+}
+
+/*INTRO VIDEO SECTION*/
+.intro_video_container{
+    width: 100%;
+    height: 320px;
+}
+
+.intro_video_container video{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.muteButton::before {
+    position: absolute;
+    top: 380px;
+    left: 20px;
+
+    cursor: pointer;
+
+    content: "\f026";
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+
+    color: #ffffff;
+}
+
+.muteButton_active::before{
+    cursor: pointer;
+
+    content: "\f028";
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+
+    color: #c20f0f;
+}
+
+/*CONTAINER SECTION*/
+.container{
+    margin: 20px;
+}
+
+.container_title h2 {
+    font-size: 25px;
+}
+
+.container_content{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.first_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first_content_image{
+    flex-basis: 40%;
+}
+
+.first_content_image img{
+    height: 300px;
+    width: 100%;
+}
+
+.first_content_text{
+    flex-basis: 50%;
+}
+
+.first_content_text p{
+    text-align: justify;
+
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+.first_content_text p .bold_text{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.second_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+
+    margin-top: 20px;
+}
+
+.second_content_sub{
+    flex-basis: 45%;
+
+    display: flex;
+    align-items: center;   
+    gap: 20px;
+
+    border-radius: 20px;
+
+    background-color: #ededed;
+}
+
+.second_content_image{
+    flex-basis: 30%;
+
+    height: 280px; 
+}
+
+.second_content_image img{
+    border-radius: 20px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.second_content_text{
+    flex-basis: 65%;
+
+    padding: 10px;
+}
+
+.second_content_text h2{
+    font-size: 18px;
+}
+
+.second_content_text p{
+    text-align: justify;
+    
+    font-size: 15px;
+    font-weight: 400px;
+
+    margin-top: 10px;
+}
+
+.second_content_text p .bold_text{
+    font-weight: 600;
+}
+
+.second_content_text p a{
+    color: #c20f0fcb;
+}
+
+.marvel_fandom_container{
+    margin: 20px;
+    padding: 10px;
+}
+
+.marvel_fandom_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.marvel_fandom_content_image{
+    flex-basis: 30%;
+
+    height: 200px;
+}
+
+.marvel_fandom_content_image img{
+    height: 100%;
+    width: 100%;
+}
+
+.marvel_fandom_content_text{
+    flex-basis: 60%;
+}
+
+.fandom_text{
+    font-size: 17px;
+}
+
+.bold_fandom{
+    cursor: pointer;
+    
+    font-weight: 500;
+
+    color: #c20f0fcb;
+}
+
+/*FOLLOW SECTION*/
+.follow {
+    margin: 20px;
+    padding-top: 10px;
+
+    text-align: center;
+}
+
+.follow h2 {
+    font-size: 20px;
+}
+
+.follow-icons i {
+    cursor: pointer;
+
+    padding-top: 15px;
+    padding-right: 20px;
+
+    font-size: 25px;
+
+    color: #c20f0fcb;
+}
+
+.follow-icons i:hover {
+    transform: scale(1.1);
+
+    color: #000000;
+}
+
+.follow-icons a {
+    text-decoration: none;
+}
+
+/*NAVIGATION SECTION*/
+.navigation_button_container{
+    display: flex;
+    justify-content: end;
+
+    margin: 20px;
+    padding-right: 50px;
+}
+
+.navigation_button_child{
+    text-align: center;
+
+    border-radius: 15px;
+
+    height: 50px;
+    width: 50px;
+
+    background-color: rgb(239, 239, 239);
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
+}
+
+.navigation_button_child:hover{
+    cursor: pointer;
+
+    color: white;
+    background-color: #c20f0fcb;
+}
+
+.navigation_button_child p{
+    padding-top: 15px;
+}
+
+.navigation_button_child .back_icon::before{
+    content: "\f015";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+/*FOOTER SECTION*/
+.footer_container{
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #c20f0fcb;
+}
+
+.footer_container p{
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 15px;
+
+    color: white;
+}
+
+/*MEDIA QUERY SECTION*/
+@media screen and (max-width: 768px){
+
+    .main_marvel_logo{
+        display: block;
+    }
+
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .side-navbar{
+        display: block;
+    }
+
+    header {       
+        display: none;   
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .intro_video_container{
+        width: 100%;
+        height: 145px;
+    }
+
+    .muteButton::before {
+        position: absolute;
+        top: 210px;
+        left: 15px;
+        font-size: 18px;
+    }
+
+    .first_content{
+        flex-direction: column;
+    }
+
+    .first_content_image img{
+        height: 200px;
+        width: 100%;
+    }
+
+    .first_content_text p{
+        font-size: 12px;
+        font-weight: 400px;
+    }
+    
+    .first_content_text p .bold_text{
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .second_content{
+        flex-direction: column;
+    }
+
+    .second_content_sub{
+        flex-basis: 45%;
+    }
+
+    .marvel_fandom_content{
+       flex-direction: column;
+       gap: 20px;
+       padding: 0;
+
+       margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+
+    .side-navbar .xicon {
+        top: 7px;
+        left: 85%;
+    }
+
+    .container_title h2{
+        padding-right: 10px;
+    }
+
+    .container_content{
+        padding: 0;
+    }
+
+    .second_content_sub{
+       gap: 0px;
+    }
+
+    .second_content_image{
+        height: 180px;
+
+        padding-left: 10px;
+    }
+
+    .second_content_image img{
+        border-radius: 5px;
+    }
+
+    .second_content_text h2{
+        font-size: 15px;
+    }
+    
+    .second_content_text p{
+        font-size: 12px;
+    }
+
+    .marvel_fandom_content_image{
+        flex-basis: initial;
+
+        height: 130px;
+        width: 100%;
+    }
+
+    .fandom_text{
+        font-size: 15px;
+    }
+
+    .navigation_button_container{
+        padding-right: 10px;
+    }
+
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marvel_Collection</title>
+
+    <!--POPPINS FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--CDN ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--ICONIC ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <link rel="icon" href="images/marvel-fandom-icon.png">
+
+    <link rel="stylesheet" href="collection.css">
+
+</head>
+
+<body>
+
+    <div class="header_wrapper">
+
+        <div class="main_marvel_logo">
+            <img src="images/marvel-fandom-image.png" onclick="document.location = 'index.html'">
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="side-navbar">
+
+            <p class="xicon" onclick="closeNavbar()">
+                <i class="fa-solid fa-xmark"></i>
+            </p>
+
+            <div class="side-navbar-links">
+                <p class="side-navbar-link"> <a href="index.html">Home</a> </p>
+                <p class="side-navbar-link"> <a href="collection.html" class="active">Collection</a> </p>
+                <p class="side-navbar-link side-navbar-link-watchlist"> <a>🎞️ WatchList</a> </p>
+                <p class="side-navbar-link"> <a href="updates.html">Updates</a> </p>
+                <p class="side-navbar-link"> <a href="about.html">About</a> </p>
+            </div>
+
+            <div class="side-nav-follow-icons-container">
+                
+                <h2>Follow us,</h2>
+
+                <div class="side-nav-follow-icons">
+                    <a href="https://www.youtube.com/@marvel/community" target="_blank"> <i
+                            class="fa-brands fa-youtube"></i> </a>
+                    <a href="https://www.instagram.com/marvel/?hl=en" target="_blank"> <i
+                            class="fa-brands fa-instagram"></i> </a>
+                    <a href="https://www.facebook.com/Marvel/" target="_blank"> <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <header>
+
+            <div class="nav_main_logo">
+                <img src="images/marvel-fandom-image.png" onclick="document.location = 'index.html'">
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="collection.html" class="active">Collections</a>
+                <a href="updates.html">Updates</a>
+                <a href="about.html">About</a>
+            </nav>
+
+        </header>
+
+        <span class="fav_movie_icon"></span>
+        <span class="fav_movie_hovertext">Watchlist</span>
+
+    </div>
+
+    <div class="watchList_nav_container">
+
+        <i class="fa-solid fa-xmark" id="nav_close"></i>
+
+        <div class="watchList_nav_title">WATCH LIST</div>
+
+        <div class="watchList_nav_content">
+
+            <!-- <div class="watchList_nav_box">
+
+                <div class="watchList_image">
+                    <img src="images/poster-images/avengers_endgame.jpg" class="watchList_image_src">
+                </div>
+
+                <div class="watchListed_detail">
+                    <div class="watchList_title">AVENGERS ENDGAME</div>
+                    <div class="watchList_rating"> <span class="star"></span> 8.9 / 10</div>
+                    <div class="watchList_genre">SuperHero | Action | Sci-Fi | Dark Humour</div>
+                    <div class="watchList_view">View</div>
+                </div>
+
+                <div> <span class="watchList_remove"></span> </div>
+
+            </div> -->
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="container_title">
+            <h2>Marvel Collections</h2>
+        </div>
+
+        <form class="product-search">
+            <input id="search" type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div class="container_content">
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/avengers_endgame.jpg" onclick="document.location = 'marvel_movielists/avengers-endgame/avengers_endgame.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text"
+                        onclick="document.location = 'marvel_movielists/avengers-endgame/avengers_endgame.html'">
+                        AVENGERS ENDGAME</p>
+                    <p class="para_text">2019 | <span class="star_icon"> 8.4 / 10</span> <span class="heart_icon"
+                            data-title="AVENGERS ENDGAME"></span> </p>
+                    <p class="file_loc">avengers-endgame/avengers_endgame.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/avengers-inifinity-war.jpg" onclick="document.location = 'marvel_movielists/avengers-infinity-war/avengers_infinity_war.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text"
+                        onclick="document.location = 'marvel_movielists/avengers-infinity-war/avengers_infinity_war.html'">
+                        AVENGERS INFINITY WAR</p>
+                    <p class="para_text">2018 | <span class="star_icon"> 8.4 / 10</span> <span class="heart_icon"
+                            data-title="AVENGERS INFINITY WAR"></span> </p>
+                    <p class="file_loc">avengers-infinity-war/avengers_infinity_war.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/spider-man-homecoming.jpg" onclick="document.location = 'marvel_movielists/spider-man-homecoming/spider_man_homecoming.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text"
+                        onclick="document.location = 'marvel_movielists/spider-man-homecoming/spider_man_homecoming.html'">
+                        SPIDER MAN HOMECOMING</p>
+                    <p class="para_text">2017 | <span class="star_icon"> 7.4 / 10</span> <span class="heart_icon"
+                            data-title="SPIDER MAN HOMECOMING"></span> </p>
+                    <p class="file_loc">spider-man-homecoming/spider_man_homecoming.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/guardians-of-the-galaxy-vol1.jpg" onclick="document.location = 'marvel_movielists/guardians-of-the-galaxy-vol1/guardians_of_the_galaxy_vol1.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text" onclick="document.location = 'marvel_movielists/guardians-of-the-galaxy-vol1/guardians_of_the_galaxy_vol1.html'">
+                        GUARDIANS OF THE GALAXY VOL 1</p>
+                    <p class="para_text">2014 | <span class="star_icon"> 8.0 / 10</span> <span class="heart_icon"
+                            data-title="GUARDIANS OF THE GALAXY VOL 1"></span> </p>
+                    <p class="file_loc">guardians-of-the-galaxy-vol1/guardians_of_the_galaxy_vol1.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/captain-america-the-winter-soldier.jpg" onclick="document.location = 'marvel_movielists/captain-america-the-winter-soldier/captain_america_the_winter_soldier.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text" onclick="document.location = 'marvel_movielists/captain-america-the-winter-soldier/captain_america_the_winter_soldier.html'">
+                        CAPTAIN AMERICA THE WINTER SOLDIER</p>
+                    <p class="para_text">2014 | <span class="star_icon"> 7.7 / 10</span> <span class="heart_icon"
+                            data-title="CAPTAIN AMERICA THE WINTER SOLDIER"></span> </p>
+                    <p class="file_loc">captain-america-the-winter-soldier/captain_america_the_winter_soldier.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/thor-the-dark-world.jpg" onclick="document.location = 'marvel_movielists/thor-the-dark-world/thor_the_dark_world.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text" onclick="document.location = 'marvel_movielists/thor-the-dark-world/thor_the_dark_world.html'">
+                        THOR THE DARK WORLD</p>
+                    <p class="para_text">2013 | <span class="star_icon"> 6.8 / 10</span> <span class="heart_icon"
+                            data-title="THOR THE DARK WORLD"></span> </p>
+                    <p class="file_loc">thor-the-dark-world/thor_the_dark_world.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/iron-man-3.jpg" onclick="document.location = 'marvel_movielists/iron-man-3/iron_man_3.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text" onclick="document.location = 'marvel_movielists/iron-man-3/iron_man_3.html'">
+                        IRON MAN 3</p>
+                    <p class="para_text">2013 | <span class="star_icon"> 7.1 / 10</span> <span class="heart_icon"
+                            data-title="IRON MAN 3"></span> </p>
+                    <p class="file_loc">iron-man-3/iron_man_3.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/the-avengers.jpg" onclick="document.location = 'marvel_movielists/the-avengers/the_avengers.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text" onclick="document.location = 'marvel_movielists/the-avengers/the_avengers.html'">
+                        THE AVENGERS</p>
+                    <p class="para_text">2012 | <span class="star_icon"> 8.0 / 10</span> <span class="heart_icon"
+                            data-title="THE AVENGERS"></span> </p>
+                    <p class="file_loc">the-avengers/the_avengers.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/captain-america-the-first-avenger.jpg" onclick="document.location = 'marvel_movielists/captain-america-the-first-avenger/captain_america_the_first_avenger.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text" onclick="document.location = 'marvel_movielists/captain-america-the-first-avenger/captain_america_the_first_avenger.html'">
+                        CAPTAIN AMERICA THE FIRST AVENGER</p>
+                    <p class="para_text">2011 | <span class="star_icon"> 6.9 / 10</span> <span class="heart_icon"
+                            data-title="CAPTAIN AMERICA THE FIRST AVENGER"></span> </p>
+                    <p class="file_loc">captain-america-the-first-avenger/captain_america_the_first_avenger.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/thor.jpg" onclick="document.location = 'marvel_movielists/thor/thor.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text" onclick="document.location = 'marvel_movielists/thor/thor.html'">
+                        THOR</p>
+                    <p class="para_text">2011 | <span class="star_icon"> 7.0 / 10</span> <span class="heart_icon"
+                            data-title="THOR"></span> </p>
+                    <p class="file_loc">thor/thor.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/iron-man-2.jpg" onclick="document.location = 'marvel_movielists/iron-man-2/iron_man_2.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text" onclick="document.location = 'marvel_movielists/iron-man-2/iron_man_2.html'">
+                        IRON MAN 2</p>
+                    <p class="para_text">2010 | <span class="star_icon"> 6.9 / 10</span> <span class="heart_icon"
+                            data-title="IRON MAN 2"></span> </p>
+                    <p class="file_loc">iron-man-2/iron_man_2.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/the-incredible-hulk.jpg" onclick="document.location = 'marvel_movielists/the-incredible-hulk/the_incredible_hulk.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text" onclick="document.location = 'marvel_movielists/the-incredible-hulk/the_incredible_hulk.html'">
+                        THE INCREDIBLE HULK</p>
+                    <p class="para_text">2008 | <span class="star_icon"> 6.6 / 10</span> <span class="heart_icon"
+                            data-title="THE INCREDIBLE HULK"></span> </p>
+                    <p class="file_loc">the-incredible-hulk/the_incredible_hulk.html</p>
+                </div>
+
+            </div>
+
+            <div class="container_content_child">
+
+                <div class="content_child_image">
+                    <img class="watchList_image_src" src="images/poster-images/iron_man.jpg" onclick="document.location = 'marvel_movielists/iron-man/iron_man.html'">
+                </div>
+
+                <div class="content_child_text">
+                    <p class="watchList_title title_text" onclick="document.location = 'marvel_movielists/iron-man/iron_man.html'">
+                        IRON MAN</p>
+                    <p class="para_text">2008 | <span class="star_icon"> 7.9 / 10</span> <span class="heart_icon"
+                            data-title="IRON MAN"></span> </p>
+                    <p class="file_loc">iron-man/iron_man.html</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="navigation_button_container">
+
+        <div class="navigation_button_child" onclick="document.location = 'index.html'">
+            <p> <span class="back_icon"></span> </p>
+        </div>
+
+    </div>
+
+    <div class="footer_container">
+        <p>© 2024 MARVEL FANDOM</p>
+    </div>
+
+    <script src="collection.js"></script>
+
+</body>
+
+</html>

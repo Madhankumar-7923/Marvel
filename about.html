@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marvel_About</title>
+
+    <!--POPPINS FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--CDN ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="images/marvel-fandom-icon.png">
+
+    <link rel="stylesheet" href="about.css">
+
+</head>
+
+<body>
+
+    <div class="header_wrapper">
+
+        <div class="main_marvel_logo">
+            <img src="images/marvel-fandom-image.png" onclick="document.location = 'index.html'">
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="side-navbar">
+
+            <p class="xicon" onclick="closeNavbar()">
+                <i class="fa-solid fa-xmark"></i>
+            </p>
+
+            <div class="side-navbar-links">
+                <p class="side-navbar-link"> <a href="index.html">Home</a> </p>
+                <p class="side-navbar-link"> <a href="collection.html">Collection</a> </p>
+                <p class="side-navbar-link"> <a href="updates.html">Updates</a> </p>
+                <p class="side-navbar-link"> <a href="about.html" class="active">About</a> </p>
+            </div>
+
+            <div class="side-nav-follow-icons-container">
+
+                <h2>Follow us,</h2>
+
+                <div class="side-nav-follow-icons">
+                    <a href="https://www.youtube.com/@marvel/community" target="_blank"> <i
+                            class="fa-brands fa-youtube"></i> </a>
+                    <a href="https://www.instagram.com/marvel/?hl=en" target="_blank"> <i
+                            class="fa-brands fa-instagram"></i> </a>
+                    <a href="https://www.facebook.com/Marvel/" target="_blank"> <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <header>
+
+            <div class="nav_main_logo">
+                <img src="images/marvel-fandom-image.png" onclick="document.location = 'index.html'">
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="collection.html">Collections</a>
+                <a href="updates.html">Updates</a>
+                <a href="about.html" class="active">About</a>
+            </nav>
+
+        </header>
+
+    </div>
+
+    <div class="intro_video_container">
+
+        <video id="introVideo" autoplay loop muted>
+            <source src="images/about-images/MARVEL STUDIOS INTRO.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <button class="muteButton " onclick="toggleMute()"></button>
+
+    </div>
+
+    <div class="container">
+
+        <div class="container_title">
+            <h2>About Marvel</h2>
+        </div>
+
+        <div class="container_content">
+
+            <div class="first_content">
+
+                <div class="first_content_image">
+                    <img src="images/about-images/marvel-comic-image.jpg">
+                </div>
+
+                <div class="first_content_text">
+                    <p><span class="bold_text">Marvel Comics</span>, founded in 1939 as Timely Comics by Martin Goodman,
+                        became Atlas Comics in 1951 and launched The Fantastic Four in 1961, marking the start of the
+                        Marvel era. Acquired by Disney on December 31, 2009, and becoming a subsidiary of Disney
+                        Publishing Worldwide in March 2023, Marvel solidified its brand through iconic creators like
+                        Stan Lee, Jack Kirby, and Steve Ditko.</p>
+                </div>
+
+            </div>
+
+            <div class="second_content">
+
+                <div class="second_content_sub">
+
+                    <div class="second_content_image">
+                        <img src="images/about-images/Stan Lee.jpg">
+                    </div>
+
+                    <div class="second_content_text">
+                        <h2>CREATOR OF MARVEL</h2>
+                        <p> <span class="bold_text"> <a href="https://en.wikipedia.org/wiki/Stan_Lee">Stan Lee</a>
+                            </span> (born Stanley Martin Lieber; December 28, 1922 –
+                            November 12, 2018) was an American comic book writer, editor, publisher, and producer. He
+                            started at Timely Comics, which became Marvel Comics, and led Marvel for two decades,
+                            transforming it into a major multimedia corporation.</p>
+                    </div>
+
+                </div>
+
+                <div class="second_content_sub">
+
+                    <div class="second_content_image">
+                        <img src="images/about-images/Martin-Goodman.jpg">
+                    </div>
+
+                    <div class="second_content_text">
+                        <h2>AMERICAN PUBLISHER</h2>
+                        <p> <span class="bold_text"> <a
+                                    href="https://en.wikipedia.org/wiki/Martin_Goodman_(publisher)">Martin
+                                    Goodman</a></span> (January 18, 1908 – June 6, 1992) was an
+                            American publisher of pulp magazines, digest sized magazines, paperback books, men's
+                            adventure magazines, and comic books, who founded the comics magazine company Timely Comics
+                            in 1939.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="marvel_fandom_container">
+
+        <div class="marvel_fandom_content">
+
+            <div class="marvel_fandom_content_image">
+                <img src="images/about-images/marvel-fandom-about-image.png">
+            </div>
+
+            <div class="marvel_fandom_content_text">
+                <p class="fandom_text">Welcome to<span class="bold_fandom" onclick="document.location='about.html'">
+                        Marvel Fandom,</span> the ultimate
+                    destination for all Marvel enthusiasts! Our fan-made website is dedicated to bringing you the latest
+                    news and updates from the Marvel Universe. Whether you're a die-hard comic book fan, a movie buff,
+                    or just beginning your Marvel journey, we've got something for everyone.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Follow us-->
+    <div class="follow">
+
+        <h2>Join Our Community, Stay Tunned!!</h2>
+
+        <div class="follow-icons">
+            <a href="https://www.youtube.com/@marvel/community" target="_blank"> <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/marvel/?hl=en" target="_blank"> <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/Marvel/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://x.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"> <i
+                    class="fa-brands fa-x-twitter"></i> </a>
+        </div>
+
+    </div>
+
+    <div class="navigation_button_container">
+
+        <div class="navigation_button_child" onclick="document.location = 'index.html'">
+            <p> <span class="back_icon"></span></p>
+        </div>
+
+    </div>
+
+    <div class="footer_container">
+        <p>© 2024 MARVEL FANDOM</p>
+    </div>
+
+    <script src="about.js"></script>
+
+</body>
+
+</html>

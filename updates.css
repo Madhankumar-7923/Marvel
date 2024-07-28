@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/*SIDE NAV SECTION*/
+.header_wrapper {
+    width: 100%;
+    height: 100px;
+
+    background-color: #c0c0c0;
+}
+
+.main_marvel_logo {
+    display: none;
+
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+    height: 50px;
+    width: 100px;
+}
+
+.main_marvel_logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-menu-toggle {
+    display: none;
+
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    color: #ffffff;
+}
+
+.navbar-menu-toggle:hover {
+    cursor: pointer;
+    color: #c20f0f;
+}
+
+.side-navbar {
+    display: none;
+    z-index: 100;
+
+    position: fixed;
+    top: 0px;
+    right: -72%;
+
+    padding: 20px;
+
+    width: 50%;
+    height: calc(var(--vh, 1vh) * 100);
+
+    transition: 1s;
+
+    background-color: #888888e5;
+    color: white;
+}
+
+.side-navbar .xicon {
+    display: inline;
+
+    position: relative;
+    left: 82%;
+
+    font-size: 20px;
+}
+
+.xicon:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.side-navbar-links {
+    margin-top: 30px;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-link a {
+    text-decoration: none;
+    font-size: 18px;
+
+    color: white;
+}
+
+.side-navbar-links a:hover {
+    cursor: pointer;
+    color: #000000;
+}
+
+.side-navbar-link .active {
+    border-radius: 5px;
+
+    padding: 5px;
+    
+    background-color: #c20f0fcb;
+}
+
+.side-nav-follow-icons-container{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+    margin-top: 280px;
+}
+
+.side-nav-follow-icons-container h2{
+    font-size: 16px;
+    font-weight: 400px;
+
+    margin-top: 5px;
+
+    color: #ffffff;
+}
+
+.side-nav-follow-icons{
+    cursor: pointer;
+
+    font-size: 20px;
+    text-align: center;
+
+    padding-top: 10px;
+}
+
+.side-nav-follow-icons i{
+    padding-right: 15px; 
+
+    color: #c20f0fcb;
+}
+
+/*HEADER SECTION*/
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 16%;
+
+    width: 1240px;
+    max-width: 90%;
+    height: 70px;
+
+    margin: auto;
+    padding-top: 15px;
+}
+
+.nav_main_logo {
+    height: 70px;
+    width: 130px;
+}
+
+.nav_main_logo img {
+    height: 100%;
+    width: 100%;
+}
+
+header nav a {
+    margin-right: 20px;
+    padding: 5px 10px;
+
+    transition: 0.2s;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #eee;
+}
+
+header nav a.active,
+header nav a:hover {
+    border-radius: 5px;
+
+    background-color: #c20f0fcb;
+}
+
+/*CONTAINER SECTION*/
+.container {
+    margin: 20px;
+    min-height: 100vh;
+}
+
+.container_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_title h2 {
+    font-size: 25px;
+    
+}
+
+.container_title p {
+    font-size: 12px;
+
+    color: #b4b4b4;
+}
+
+.container_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: safe;
+
+    gap: 60px;
+
+    padding-top: 20px;
+}
+
+.main_content_update {
+    flex-basis: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.main_content_update_image {
+    flex-basis: 45%;
+
+    width: 100%;
+    height: 315px;
+}
+
+.main_content_update_image iframe {
+    border-radius: 10px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.main_content_update_text {
+    flex-basis: 40%;
+}
+
+.main_content_update_text h2 {
+    font-size: 22px;
+}
+
+.main_content_update_text p {
+    margin-top: 20px;
+
+    font-size: 15px;
+    text-align: justify;
+
+    color: #4d4d4d;
+}
+
+.sub_content_update {
+    flex-basis: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 10px;
+
+    background-color: #dbdbdb;
+    box-shadow: 1px 1px 2px silver;
+}
+
+.sub_content_update_image {
+    flex-basis: 100%;
+}
+
+.sub_content_update_image img {
+    border-radius: 10px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.sub_content_update_text {
+    flex-basis: 100%;
+
+    padding: 10px;
+}
+
+.sub_content_update_text h2 {
+    font-size: 18px;
+
+    margin-top: 10px;
+}
+
+.sub_content_update_text p {
+    margin-top: 20px;
+
+    font-size: 15px;
+    text-align: justify;
+
+    color: #4d4d4d;
+}
+
+/*ANIMATION PART*/
+.main_content_update_image iframe,
+.main_content_update_text h2,
+.main_content_update_text p {
+    transform: translateX(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContentMain .5s linear 1 forwards;
+}
+
+@keyframes showContentMain {
+    to {
+        transform: translateX(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.sub_content_update_image img,
+.sub_content_update_text h2,
+.sub_content_update_text p {
+    transform: translateX(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContentSub .5s linear 1 forwards;
+}
+
+@keyframes showContentSub {
+    to {
+        transform: translateX(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+/*NAVIGATION SECTION*/
+.navigation_button_container {
+    display: flex;
+    justify-content: end;
+
+    margin: 20px;
+    padding-right: 50px;
+}
+
+.navigation_button_child {
+    border-radius: 15px;
+
+    height: 50px;
+    width: 50px;
+
+    text-align: center;
+
+    background-color: rgb(239, 239, 239);
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
+}
+
+.navigation_button_child:hover {
+    cursor: pointer;
+
+    background-color: #c20f0fcb;
+    color: white;
+}
+
+.navigation_button_child p {
+    padding-top: 15px;
+}
+
+.navigation_button_child .back_icon::before {
+    content: "\f015";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+/*FOOTER SECTION*/
+.footer_container {
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #c20f0fcb;
+}
+
+.footer_container p {
+    text-align: center;
+    font-size: 15px;
+
+    padding: 20px;
+
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .main_marvel_logo {
+        display: block;
+    }
+
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .side-navbar {
+        display: block;
+    }
+
+    header {
+        display: none;
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .main_content_update {
+        flex-direction: column;
+    }
+
+    .main_content_update_image {
+        flex-basis: initial;
+    }
+
+    .main_content_update_text {
+        flex-basis: initial;
+    }
+
+    .main_content_update_text h2 {
+        margin-top: 20px;
+    }
+
+    .sub_content_update {
+        flex-basis: 100%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .side-navbar .xicon {
+        top: 7px;
+        left: 85%;
+    }
+
+    .container_title {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .container_title h2 {
+        padding-right: 10px;
+    }
+
+    .container_title p {
+        font-size: 10px;
+
+        margin-top: 10px;
+    }
+
+    .main_content_update_image {
+        flex-basis: initial;
+
+        height: 200px;
+    }
+
+    .main_content_update_text h2 {
+        font-size: 20px;
+    }
+
+    .main_content_update_text p {
+        margin-top: 18px;
+    }
+
+    .sub_content_update_text h2 {
+        font-size: 16px;
+    }
+
+    .sub_content_update_text p {
+        font-size: 14px;
+    }
+
+    .navigation_button_container {
+        padding-right: 10px;
+    }
+
+}
