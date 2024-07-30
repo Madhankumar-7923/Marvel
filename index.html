@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marvel_Home</title>
+
+    <!--POPPINS FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--CDN ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="images/marvel-fandom-icon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="main_marvel_logo">
+        <img src="images/marvel-fandom-image.png" onclick="document.location = 'index.html'">
+    </div>
+
+    <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="side-navbar">
+
+        <p style="text-align: right;" class="xicon" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"> <a href="index.html" class="active">Home</a> </p>
+            <p class="side-navbar-link"> <a href="collection.html">Collection</a> </p>
+            <p class="side-navbar-link"> <a href="updates.html">Updates</a> </p>
+            <p class="side-navbar-link"> <a href="about.html">About</a> </p>
+        </div>
+
+        <div class="side-nav-follow-icons-container">
+
+            <h2>Follow us,</h2>
+
+            <div class="side-nav-follow-icons">
+                <a href="https://www.youtube.com/@marvel/community" target="_blank"> <i
+                        class="fa-brands fa-youtube"></i> </a>
+                <a href="https://www.instagram.com/marvel/?hl=en" target="_blank"> <i
+                        class="fa-brands fa-instagram"></i> </a>
+                <a href="https://www.facebook.com/Marvel/" target="_blank"> <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://x.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <header>
+
+        <div class="nav_main_logo">
+            <img src="images/marvel-fandom-image.png" onclick="document.location = 'index.html'">
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="collection.html">Collections</a>
+            <a href="updates.html">Updates</a>
+            <a href="about.html">About</a>
+        </nav>
+
+    </header>
+
+    <div class="wrapper">
+
+        <div class="search">
+            <i class="fas fa-search search_icon"></i>
+            <input type="text" class="search_bar" name="" id="search_item" placeholder="Search Movie Here"
+                onkeyup="search()">
+        </div>
+
+        <div class="movie_wrapper" id="movie_wrapper">
+
+            <div class="movie_child" onclick="document.location = 'marvel_movielists/iron-man/iron_man.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/iron_man.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>Iron Man</h2>
+
+                    <ul>
+                        <li>2008 | </li>
+                        <li> <span class="star_icon"></span> 7.9 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Fantasy</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child"
+                onclick="document.location = 'marvel_movielists/the-incredible-hulk/the_incredible_hulk.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/the-incredible-hulk.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>THE INCREDIBLE HULK</h2>
+
+                    <ul>
+                        <li>2008 | </li>
+                        <li> <span class="star_icon"></span> 6.6 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Sci-Fi | Adventure</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child" onclick="document.location = 'marvel_movielists/iron-man-2/iron_man_2.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/iron-man-2.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>IRON MAN 2</h2>
+
+                    <ul>
+                        <li>2010 | </li>
+                        <li> <span class="star_icon"></span> 6.9 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Fantasy</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child" onclick="document.location = 'marvel_movielists/thor/thor.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/thor.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>THOR</h2>
+
+                    <ul>
+                        <li>2011 | </li>
+                        <li> <span class="star_icon"></span> 7.0 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Fantasy</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child"
+                onclick="document.location = 'marvel_movielists/captain-america-the-first-avenger/captain_america_the_first_avenger.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/captain-america-the-first-avenger.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>CAPTAIN AMERICA THE FIRST AVENGER</h2>
+
+                    <ul>
+                        <li>2011 | </li>
+                        <li> <span class="star_icon"></span> 6.9 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Fantasy</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child" onclick="document.location = 'marvel_movielists/the-avengers/the_avengers.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/the-avengers.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>THE AVENGERS</h2>
+
+                    <ul>
+                        <li>2012 | </li>
+                        <li> <span class="star_icon"></span> 8.0 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Fantasy</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child" onclick="document.location = 'marvel_movielists/iron-man-3/iron_man_3.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/iron-man-3.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>IRON MAN 3</h2>
+
+                    <ul>
+                        <li>2013 | </li>
+                        <li> <span class="star_icon"></span> 7.1 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Fantasy</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child"
+                onclick="document.location = 'marvel_movielists/thor-the-dark-world/thor_the_dark_world.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/thor-the-dark-world.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>THOR THE DARK WORLD</h2>
+
+                    <ul>
+                        <li>2013 | </li>
+                        <li> <span class="star_icon"></span> 6.8 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Fantasy</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child"
+                onclick="document.location = 'marvel_movielists/captain-america-the-winter-soldier/captain_america_the_winter_soldier.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/captain-america-the-winter-soldier.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>CAPTAIN AMERICA THE WINTER SOLDIER</h2>
+
+                    <ul>
+                        <li>2014 | </li>
+                        <li> <span class="star_icon"></span> 7.7 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Fantasy</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child"
+                onclick="document.location = 'marvel_movielists/guardians-of-the-galaxy-vol1/guardians_of_the_galaxy_vol1.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/guardians-of-the-galaxy-vol1.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>GUARDIANS OF THE GALAXY VOL 1</h2>
+
+                    <ul>
+                        <li>2014 | </li>
+                        <li> <span class="star_icon"></span> 8.0 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Alien</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child"
+                onclick="document.location = 'marvel_movielists/spider-man-homecoming/spider_man_homecoming.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/spider-man-homecoming.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>SPIDER MAN HOMECOMING</h2>
+
+                    <ul>
+                        <li>2017 | </li>
+                        <li> <span class="star_icon"></span> 7.4 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Stunning</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child"
+                onclick="document.location = 'marvel_movielists/avengers-infinity-war/avengers_infinity_war.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/avengers-inifinity-war.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>AVENGERS INFINITY WAR</h2>
+
+                    <ul>
+                        <li>2018 | </li>
+                        <li> <span class="star_icon"></span> 8.4 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Alien</p>
+
+                </div>
+
+            </div>
+
+            <div class="movie_child"
+                onclick="document.location = 'marvel_movielists/avengers-endgame/avengers_endgame.html'">
+
+                <div class="image">
+                    <img src="images/poster-images/avengers_endgame.jpg">
+                </div>
+
+                <div class="content">
+
+                    <h2>Avengers EndGame</h2>
+
+                    <ul>
+                        <li>2019 | </li>
+                        <li> <span class="star_icon"></span> 8.4 / 10</li>
+                    </ul>
+
+                    <p>Superheros | Action | Dark Humour | Fantasy</p>
+
+                </div>
+
+            </div>
+
+            <div id="no_match">
+                <p>No Match Found</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="slider">
+
+        <div class="list">
+
+            <div class="item">
+
+                <img src="images/iron_man.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/iron man.jpg"> </div>
+
+                    <div class="description">After being held captive in an Afghan cave, billionaire engineer Tony Stark
+                        creates a unique weaponized suit of armor to fight evil.</div>
+
+                    <div class="button">
+                        <button onclick="document.location = 'marvel_movielists/iron-man/iron_man.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/the-incredible-hulk.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/incredible hulk.jpg"> </div>
+
+                    <div class="description">Bruce Banner, a scientist on the run from the U.S. Government, must find a
+                        cure for the monster he turns into whenever he loses his temper.</div>
+
+                    <div class="button">
+                        <button
+                            onclick="document.location = 'marvel_movielists/the-incredible-hulk/the_incredible_hulk.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/iron-man-2.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/iron man 2.jpg"> </div>
+
+                    <div class="description">With the world now aware of his identity as Iron Man, Tony Stark must
+                        contend with both his declining health and a vengeful mad man with ties to his father's legacy.
+                    </div>
+
+                    <div class="button">
+                        <button onclick="document.location = 'marvel_movielists/iron-man-2/iron_man_2.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/thor.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/thor.jpg"> </div>
+
+                    <div class="description">The powerful but arrogant god Thor is cast out of Asgard to live amongst
+                        humans in Midgard, where he soon becomes one of their finest defenders.</div>
+
+                    <div class="button">
+                        <button onclick="document.location = 'marvel_movielists/thor/thor.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/captain-america-the-first-avenger.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/captain america the first avenger.jpg"> </div>
+
+                    <div class="description">Steve Rogers, a rejected military soldier, transforms into Captain America
+                        after taking a dose of a "Super-Soldier serum"</div>
+
+                    <div class="button">
+                        <button
+                            onclick="document.location = 'marvel_movielists/captain-america-the-first-avenger/captain_america_the_first_avenger.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/the-avengers.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/the avengers.jpg"> </div>
+
+                    <div class="description">Earth's mightiest heroes must come together and learn to fight as a team if
+                        they are going to stop the mischievous Loki and his alien army from enslaving humanity.</div>
+
+                    <div class="button">
+                        <button onclick="document.location = 'marvel_movielists/the-avengers/the_avengers.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/iron-man-3.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/iron man 3.jpg"> </div>
+
+                    <div class="description">When Tony Stark's world is torn apart by a formidable terrorist called the
+                        Mandarin, he starts an odyssey of rebuilding and retribution.</div>
+
+                    <div class="button">
+                        <button onclick="document.location = 'marvel_movielists/iron-man-3/iron_man_3.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/thor-the-dark-world.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/thor the dark world.jpg"> </div>
+
+                    <div class="description">When the Dark Elves attempt to plunge the universe into darkness, Thor must
+                        embark on a perilous and personal journey that will reunite him with doctor Jane Foster.</div>
+
+                    <div class="button">
+                        <button
+                            onclick="document.location = 'marvel_movielists/thor-the-dark-world/thor_the_dark_world.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/captain-america-the-winter-soldier.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/captain america the winter soldier.png"> </div>
+
+                    <div class="description">Steve Rogers struggles to embrace his role in the modern world. He teams up
+                        with Black Widow and S.H.I.E.L.D agent to battle a new threat from history: the Winter Soldier.
+                    </div>
+
+                    <div class="button">
+                        <button
+                            onclick="document.location = 'marvel_movielists/captain-america-the-winter-soldier/captain_america_the_winter_soldier.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/guardians-of-the-galaxy-vol1.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/guardians of the galaxy.jpg"> </div>
+
+                    <div class="description">A group of intergalactic criminals must pull together to stop a fanatical
+                        warrior with plans to purge the universe.</div>
+
+                    <div class="button">
+                        <button
+                            onclick="document.location = 'marvel_movielists/guardians-of-the-galaxy-vol1/guardians_of_the_galaxy_vol1.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/spider-man-homecoming.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/spider man homecoming.png"> </div>
+
+                    <div class="description">Peter Parker balances his life as an ordinary high school student in Queens
+                        with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling
+                        the skies of New York City.</div>
+
+                    <div class="button"
+                        onclick="document.location = 'marvel_movielists/spider-man-homecoming/spider_man_homecoming.html'">
+                        <button>Explore</button> </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/avengers_infinity war.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/infinity war.png"> </div>
+
+                    <div class="description">The Avengers and their allies must be willing to sacrifice all in an
+                        attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to
+                        the universe.</div>
+
+                    <div class="button"
+                        onclick="document.location = 'marvel_movielists/avengers-infinity-war/avengers_infinity_war.html'">
+                        <button>Explore</button> </div>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/avengers_endgame.jpg" alt="">
+
+                <div class="content">
+
+                    <div class="title"> <img src="images/title-images/Endgame.png"> </div>
+
+                    <div class="description">
+                        After the devastating events of Avengers Infinity War, the universe is in ruins. The Avengers reunite with their remaining allies to undo Thanos' actions and restore balance.
+                    </div>
+
+                    <div class="button">
+                        <button
+                            onclick="document.location = 'marvel_movielists/avengers-endgame/avengers_endgame.html'">Explore</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="thumbnail">
+
+            <div class="item">
+                <img src="images/iron_man.jpg"  onclick="document.location = 'marvel_movielists/iron-man/iron_man.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/the-incredible-hulk.jpg" onclick="document.location = 'marvel_movielists/the-incredible-hulk/the_incredible_hulk.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/iron-man-2.jpg"  onclick="document.location = 'marvel_movielists/iron-man-2/iron_man_2.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/thor.jpg" onclick="document.location = 'marvel_movielists/thor/thor.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/captain-america-the-first-avenger.jpg" onclick="document.location = 'marvel_movielists/captain-america-the-first-avenger/captain_america_the_first_avenger.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/the-avengers.jpg" onclick="document.location = 'marvel_movielists/the-avengers/the_avengers.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/iron-man-3.jpg" onclick="document.location = 'marvel_movielists/iron-man-3/iron_man_3.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/thor-the-dark-world.jpg" onclick="document.location = 'marvel_movielists/thor-the-dark-world/thor_the_dark_world.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/captain-america-the-winter-soldier.jpg" onclick="document.location = 'marvel_movielists/captain-america-the-winter-soldier/captain_america_the_winter_soldier.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/guardians-of-the-galaxy-vol1.jpg" onclick="document.location = 'marvel_movielists/guardians-of-the-galaxy-vol1/guardians_of_the_galaxy_vol1.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/spider-man-homecoming.jpg" onclick="document.location = 'marvel_movielists/spider-man-homecoming/spider_man_homecoming.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/avengers_infinity war.jpg" onclick="document.location = 'marvel_movielists/avengers-infinity-war/avengers_infinity_war.html'">
+            </div>
+
+            <div class="item">
+                <img src="images/avengers_endgame.jpg" onclick="document.location = 'marvel_movielists/avengers-endgame/avengers_endgame.html'">
+            </div>
+
+        </div>
+
+        <div class="nextPrevArrows">
+            <button class="next"> < </button>
+            <button class="prev"> > </button>
+        </div>
+
+    </div>
+
+    <script src="index.js" charset="UTF-8"></script>
+
+</body>
+
+</html>
