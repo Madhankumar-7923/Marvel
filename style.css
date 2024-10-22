@@ -350,7 +350,7 @@ li {
     background-color: rgb(230, 230, 230);
 }
 
-/*sLIDER SECTION*/
+/*SLIDER SECTION*/
 
 .slider {
     height: calc(var(--vh, 1vh) * 100);
@@ -490,6 +490,11 @@ li {
 
     width: 150px;
     height: 220px;
+}
+
+.thumbnail .item:hover {
+    transform: translateY(-30px);
+    cursor: pointer;
 }
 
 .thumbnail .item img {
@@ -778,7 +783,7 @@ li {
         margin-top: 0px;
     }
 
-    .thumbnail{
+    .thumbnail {
         width: 60%;
         overflow-y: hidden;
         overflow-x: scroll;
@@ -792,7 +797,7 @@ li {
         display: none;
     }
 
-    .nextPrevArrows{
+    .nextPrevArrows {
         display: none;
     }
 
