@@ -783,8 +783,15 @@ li {
         margin-top: 0px;
     }
 
-    .thumbnail {
+    .thumbnail{
         width: 60%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+
+    .thumbnail .item:hover {
+        transform: translateY(0px);
+        cursor: default;
     }
 
     .thumbnail::-webkit-scrollbar {
