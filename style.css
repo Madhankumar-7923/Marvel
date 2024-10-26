@@ -785,8 +785,6 @@ li {
 
     .thumbnail {
         width: 60%;
-        overflow-y: hidden;
-        overflow-x: scroll;
     }
 
     .thumbnail::-webkit-scrollbar {
